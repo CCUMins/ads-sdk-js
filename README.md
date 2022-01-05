@@ -9,7 +9,7 @@
 
 1. cdn.
     ```html
-    <script src='https://cdn.jsdelivr.net/npm/ccu-ads/dist/ccu-ads.min.js' />
+    <script src='https://cdn.jsdelivr.net/npm/ccu-ads/dist/ccu-ads.min.js' integrity='sha256-w3VXV8zrnhri4whWseSn2RwXgVazUgILidcQpUh96Fk=' crossorigin='anonymous'></script>
     ```
 
 ## Implementation
