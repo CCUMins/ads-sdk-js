@@ -10,20 +10,13 @@ import './styles.css';
 
 export default class CCUAds {
 
-  static current = CCUAds.current || new CCUAds();
-
-  constructor() {
-    this.apiKey = null;
-  }
-
-  initialize(apiKey) {
-    this.apiKey = apiKey;
+  constructor(apiKey) {
     window.ads_api_key = apiKey;
   }
 
   /* actions */
   async requestAndShowAd() {
-    if( !this.apiKey ) {
+    if( !window.ads_api_key ) {
       console.warn(`ADS SDK Error: Api key is not defined, initialize the sdk before requesting an ad`);
       return;
     }
@@ -144,3 +137,5 @@ export default class CCUAds {
   }
 
 }
+
+window.CCUAds = CCUAds;
