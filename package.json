@@ -1,13 +1,29 @@
 {
-  "name": "CCU",
+  "name": "CCU Ads",
   "version": "1.0.0",
-  "description": "CCU Ads SDK",
+  "description": "Ads sdk js",
+  "keywords": [
+    "ccu",
+    "ads",
+    "rewarded video",
+    "video"
+  ],
+  "homepage": "https://github.com/CCUMins/ads-sdk-js",
+  "bugs": {
+    "url": "https://github.com/CCUMins/ads-sdk-js/issues",
+    "email": "damian@ccu.ai"
+  },
   "main": "Ads.js",
   "scripts": {
     "build": "webpack --config config/webpack.js"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/CCUMins/ads-sdk-js.git"
+  },
   "author": "ccu.ai",
-  "license": "ISC",
+  "license": "MIT",
+  "private": false,
   "dependencies": {
     "css-loader": "^5.2.6",
     "style-loader": "^3.0.0",
