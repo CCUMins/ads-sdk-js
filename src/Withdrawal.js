@@ -2,7 +2,7 @@
 import { numberFormat, isMobile } from './Utils';
 
 /* styles */
-import './styles.css';
+import './styles.scss';
 
 export default class Withdrawal {
 

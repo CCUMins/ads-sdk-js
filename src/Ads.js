@@ -6,7 +6,7 @@ import Withdrawal from './Withdrawal';
 import { isMobile, isAndroid, isIOS, numberFormat } from './Utils';
 
 /* styles */
-import './styles.css';
+import './styles.scss';
 
 export default class CCUAds {
 
@@ -138,4 +138,4 @@ export default class CCUAds {
 
 }
 
-window.CCUAds = CCUAds;
+global.CCUAds = CCUAds;
