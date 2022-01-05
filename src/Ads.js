@@ -23,11 +23,6 @@ export default class CCUAds {
 
   /* actions */
   async requestAndShowAd() {
-
-    let reward = new Withdrawal({ id: 'aaaaa', amount: 70, action: `https://api.flashboy.com/ads/sdk/rewardedVideo/streamClicked.php?token=${encodeURIComponent('=asdsadasdasds')}&action=${encodeURIComponent('https://www.ccu.ai')}` });
-    reward.show();
-    return
-
     if( !this.apiKey ) {
       console.warn(`ADS SDK Error: Api key is not defined, initialize the sdk before requesting an ad`);
       return;

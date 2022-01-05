@@ -1,7 +1,7 @@
 {
-  "name": "CCU Ads",
-  "version": "1.0.0",
-  "description": "Ads sdk js",
+  "name": "ccu-ads",
+  "version": "1.0.1.1",
+  "description": "CCU Ads sdk js",
   "keywords": [
     "ccu",
     "ads",
@@ -13,7 +13,7 @@
     "url": "https://github.com/CCUMins/ads-sdk-js/issues",
     "email": "damian@ccu.ai"
   },
-  "main": "Ads.js",
+  "main": "src/Ads.js",
   "scripts": {
     "build": "webpack --config config/webpack.js"
   },
@@ -23,11 +23,5 @@
   },
   "author": "ccu.ai",
   "license": "MIT",
-  "private": false,
-  "dependencies": {
-    "css-loader": "^5.2.6",
-    "style-loader": "^3.0.0",
-    "webpack": "^5.65.0",
-    "webpack-cli": "^4.9.1"
-  }
+  "private": false
 }
