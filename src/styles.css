@@ -1,0 +1,164 @@
+.ccu-ads {
+  div {
+    display: flex;
+    box-sizing: border-box;
+  }
+  .fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+  .flex {
+    display: flex;
+  }
+  .flex-1 {
+    flex: 1;
+  }
+  .flex-row {
+    flex-direction: row;
+  }
+  .flex-col {
+    flex-direction: column;
+  }
+  .items-start {
+    align-items: flex-start;
+  }
+  .items-center {
+    align-items: center;
+  }
+  .items-end {
+    align-items: flex-end;
+  }
+  .justify-start {
+    justify-content: flex-start;
+  }
+  .justify-center {
+    justify-content: center;
+  }
+  .justify-end {
+    justify-content: flex-end;
+  }
+  .justify-between {
+    justify-content: space-between;
+  }
+  .w-full {
+    width: 100%;
+  }
+  .h-full {
+    height: 100%;
+  }
+  .w-90 {
+    width: 90%;
+  }
+  .w-80 {
+    width: 80%;
+  }
+
+  .ml-1 {
+    margin-left: 1rem;
+  }
+  .ml-2 {
+    margin-left: 1rem;
+  }
+  .mt-1 {
+    margin-top: 2rem;
+  }
+  .mt-2 {
+    margin-top: 2rem;
+  }
+  .mb-1 {
+    margin-bottom: 1rem;
+  }
+  .py-1 {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+  .px-1 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  /* text */
+  .font-bold {
+    font-weight: 700;
+  }
+  .font-xs {
+    font-size: 0.7rem;
+  }
+  .font-sm {
+    font-size: 0.8rem;
+  }
+  .font-base {
+    font-size: 1rem;
+  }
+  .font-lg {
+    font-size: 1.2rem;
+  }
+  .font-xl {
+    font-size: 1.5rem;
+  }
+  .italic {
+    font-style: italic;
+  }
+  .underline {
+    text-decoration: underline;
+  }
+  .text-center {
+    text-align: center;
+  }
+  .spacing {
+    letter-spacing: 0.1rem;
+  }
+
+  /* text colors */
+  .text-gray {
+    color: #799499;
+  }
+  .text-white {
+    color: white;
+  }
+
+  /* background colors */
+  .bg-black {
+    background-color: black;
+  }
+  .bg-white {
+    background-color: white;
+  }
+  .bg-light-blue {
+    background-color: #1f9bf4;
+  }
+  .bg-green {
+    background-color: #06DE9E;
+  }
+
+  svg {
+    position: absolute;
+    top: 2;
+    left: 2;
+    width: 40px;
+    height: 40px;
+    transform: rotateY(-180deg) rotateZ(-90deg);
+  }
+
+  circle {
+    stroke-dasharray: 113px;
+    stroke-dashoffset: 0px;
+    stroke-linecap: round;
+    stroke-width: 3px;
+    stroke: #06DE9E;
+    fill: none;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+  }
+
+  @keyframes countdown {
+    from {
+      stroke-dashoffset: 0px;
+    }
+    to {
+      stroke-dashoffset: 113px;
+    }
+  }
+
+}

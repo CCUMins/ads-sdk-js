@@ -1,0 +1,17 @@
+{
+  "name": "CCU",
+  "version": "1.0.0",
+  "description": "CCU Ads SDK",
+  "main": "Ads.js",
+  "scripts": {
+    "build": "webpack --config config/webpack.js"
+  },
+  "author": "ccu.ai",
+  "license": "ISC",
+  "dependencies": {
+    "css-loader": "^5.2.6",
+    "style-loader": "^3.0.0",
+    "webpack": "^5.65.0",
+    "webpack-cli": "^4.9.1"
+  }
+}
