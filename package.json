@@ -14,9 +14,6 @@
     "email": "damian@ccu.ai"
   },
   "main": "src/Ads.js",
-  "scripts": {
-    "build": "webpack --config config/webpack.js"
-  },
   "repository": {
     "type": "git",
     "url": "https://github.com/CCUMins/ads-sdk-js.git"

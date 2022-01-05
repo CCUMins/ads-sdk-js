@@ -107,9 +107,9 @@ export default class CCUAds {
         video.play();
 
         document.getElementById('ccu-countdown').style.animationName = 'countdown';
-        document.getElementById('ccu-countdown').style.WebkitAnimationName = 'countdown';
+        document.getElementById('ccu-countdown').style.webkitAnimationName = 'countdown';
         document.getElementById('ccu-countdown').style.animationDuration = `${video.duration}s`;
-        document.getElementById('ccu-countdown').style.WebkitAnimationDuration = `${video.duration}s`;
+        document.getElementById('ccu-countdown').style.webkitAnimationDuration = `${video.duration}s`;
 
       } else {
         onStreamError();
