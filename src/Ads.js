@@ -57,12 +57,13 @@ export default class CCUAds {
           </div>
           <div id='ccu-ads-player-banner' class='${template == 'PARTIAL_SCREEN' ? 'w-full' : 'w-80'} items-center justify-center bg-white' style='${template == 'PARTIAL_SCREEN' ? 'flex: 1;' : 'height: 100px; border-radius: 2rem 2rem 0 0; padding: 0 1rem'}'>
             <div class='w-full h-full items-center justify-center ${template == 'FULL_SCREEN' ? 'flex-row justify-between' : ''}'>
-              <div class='${template == 'FULL_SCREEN' ? '' : 'w-90'} flex-row justify-start' style='height: 3rem;'>
-                <span class='${template == 'FULL_SCREEN' && isMobile() ? 'font-xs' : 'font-sm'} text-white text-center bg-light-blue' style='padding: 5px 10px; border-radius: 50%;'>Ad</span>
+              <div class='${template == 'FULL_SCREEN' ? '' : 'w-full px-1'} flex-row justify-start' style='height: 3.5rem; ${template == 'PARTIAL_SCREEN' ? 'border-bottom: 1px solid #799499' : ''}'>
+                <span class='${template == 'FULL_SCREEN' && isMobile() ? 'font-xs' : 'font-sm'} text-white text-center bg-light-blue' style='padding: 5px 10px; border-radius: 1000px;'>Ad</span>
                 <span class='${template == 'FULL_SCREEN' && isMobile() ? 'font-xs' : 'font-xs ml-1'} font-bold'>${template == 'FULL_SCREEN' ? '' : parsedAction}</span>
               </div>
               <div class='${template == 'FULL_SCREEN' ? '' : 'w-90'} h-full items-center justify-center ${template == 'PARTIAL_SCREEN' ? '' : 'flex-row'}'>
                 <div class='${template == 'PARTIAL_SCREEN' ? 'mt-2' : 'flex-row ml-2'}'>
+                  <img class='${media.logo ? template == 'PARTIAL_SCREEN' ? 'mb-2' : 'mr-2' : ''}' src='${media.logo}' style='width: ${media.logo ? '4rem;' : '0;'} height: ${media.logo ? '4rem;' : '0;'} border-radius: 2.5rem; object-fit: cover;' />
                   <span class='${template == 'FULL_SCREEN' && isMobile() ? 'font-base' : 'font-lg'} font-bold italic'>${media.name}</span>
                   <span class='${template == 'FULL_SCREEN' && isMobile() ? 'font-xs' : 'font-sm'} text-gray ${template == 'PARTIAL_SCREEN' ? '' : 'ml-1'}'>${parsedAction}</span>
                   <button onclick='window.open("${cta}")' class='flex ${template == 'PARTIAL_SCREEN' ? 'mt-1' : 'ml-1'} bg-green flex-row' style='padding: 0.3rem 1rem; border-radius: 100px;'>
@@ -105,11 +106,10 @@ export default class CCUAds {
       });
       if( response && response.serverStatus == 'SUCCESS' ) {
         video.play();
-
-        document.getElementById('ccu-countdown').style.animationName = 'countdown';
         document.getElementById('ccu-countdown').style.webkitAnimationName = 'countdown';
-        document.getElementById('ccu-countdown').style.animationDuration = `${video.duration}s`;
+        document.getElementById('ccu-countdown').style.animationName = 'countdown';
         document.getElementById('ccu-countdown').style.webkitAnimationDuration = `${video.duration}s`;
+        document.getElementById('ccu-countdown').style.animationDuration = `${video.duration}s`;
 
       } else {
         onStreamError();
