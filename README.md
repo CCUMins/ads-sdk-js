@@ -9,7 +9,7 @@
 
 2. cdn.
     ```html
-    <script src='https://cdn.jsdelivr.net/npm/ccu-ads@1.0.0/dist/ccu-ads.min.js'></script>
+    <script src='https://cdn.jsdelivr.net/npm/ccu-ads@latest/dist/ccu-ads.min.js'></script>
     ```
 
 ## Implementation
