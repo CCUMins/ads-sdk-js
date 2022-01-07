@@ -102,8 +102,8 @@ export default class CCUAds {
     video.autoplay = false;
     video.onloadedmetadata = async () => {
 
-      let viewHeight = document.getElementById('ccu-ads-player-container-id').offsetHeight;
-      if( template == 'FULL_SCREEN' && viewHeight < video.videoHeight ) {
+      let viewHeight = window.innerHeight - 100 // banner height in full screen mode;
+      if( template == 'FULL_SCREEN' && viewHeight <= video.videoHeight ) {
         video.style.height = `${viewHeight}px`;
       }
 
