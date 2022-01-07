@@ -96,11 +96,17 @@ export default class CCUAds {
 
     let video = document.getElementById('ccu-ads-player-video-id');
     video.setAttribute('playsinline', '');
-    video.style.cssText = 'object-fit: contain;';
+    video.style.cssText = `object-fit: contain;`;
     video.src = streamURL;
     video.loop = false;
     video.autoplay = false;
     video.onloadedmetadata = async () => {
+
+      let viewHeight = document.getElementById('ccu-ads-player-container-id').offsetHeight;
+      if( template == 'FULL_SCREEN' && viewHeight < video.videoHeight ) {
+        video.style.height = `${viewHeight}px`;
+      }
+
       let response = await API_ads.streamStarted({
         token: token.streamToken
       });
