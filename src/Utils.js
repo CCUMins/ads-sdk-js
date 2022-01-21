@@ -7,7 +7,7 @@ export const isIOS = () => {
 }
 
 export const isMobile = () => {
-  return isAndroid() || isIOS() ? true : false;
+  return (isAndroid() || isIOS()) && window.innerWidth < 1100 ? true : false;
 }
 
 export const numberFormat = (amount, decimalCount = 8, decimal = '.', thousands = ',') => {

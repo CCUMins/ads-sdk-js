@@ -24,7 +24,7 @@ export default class Withdrawal {
     root.classList.add('ccu-ads');
     root.id = 'ccu-ads-withdrawal-dialog';
     root.innerHTML = `
-      <div class='fixed w-full h-full items-center justify-center' style='z-index: 999999999; background-color: rgba(234, 241, 245, 0.8);'>
+      <div class='fixed w-full h-full items-center justify-center' style='z-index: 999999999; background-color: rgba(120, 148, 155, 0.9);'>
         <button onclick='document.body.removeChild(document.getElementById("ccu-ads-withdrawal-dialog"));'><img src='https://ccu-public.s3.us-east-2.amazonaws.com/ads-sdk-assets/close.svg' style='width: 2rem;' /></button>
         <div class='bg-white p-2 mt-1' style='border-radius: 1rem; max-width: 300px;'>
           <img src='https://ccu-public.s3.us-east-2.amazonaws.com/ads-sdk-assets/bitcoin.svg' style='width: 4rem;' />
