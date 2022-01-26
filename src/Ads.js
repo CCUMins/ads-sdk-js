@@ -141,6 +141,7 @@ export default class CCUAds {
 
     let video = document.getElementById('ccu-ads-player-video-id');
     if( video ) {
+
       video.setAttribute('playsinline', '');
       video.style.cssText = `object-fit: contain;`;
       video.src = streamURL;

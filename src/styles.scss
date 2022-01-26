@@ -47,8 +47,14 @@
   .h-full {
     height: 100%;
   }
+  .h-20 {
+    height: 5rem;
+  }
   .w-90 {
     width: 90%;
+  }
+  .w-10 {
+    width: 2.5rem;
   }
   .w-80 {
     width: 80%;
@@ -70,7 +76,7 @@
     margin-right: 2rem;
   }
   .mt-1 {
-    margin-top: 2rem;
+    margin-top: 1rem;
   }
   .mt-2 {
     margin-top: 2rem;
@@ -94,6 +100,9 @@
   .px-1 {
     padding-left: 1rem;
     padding-right: 1rem;
+  }
+  .pt-0 {
+    padding-top: 0;
   }
 
   /* text */
@@ -148,6 +157,10 @@
   }
   .bg-green {
     background-color: #06DE9E;
+  }
+
+  .cursor-pointer {
+    cursor: pointer;
   }
 
   svg {
