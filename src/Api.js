@@ -1,5 +1,5 @@
 /* constants */
-const API_URL_BASE = 'https://api.flashboy.com/ads/';
+const API_URL_BASE = 'https://api.bysato.com/ads/';
 const noParams = {};
 
 const doApiCall = async (endpoint, params, fallback = null) => {
