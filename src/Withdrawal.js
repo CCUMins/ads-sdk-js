@@ -18,7 +18,7 @@ export default class Withdrawal {
       document.body.removeChild(oldChild);
     }
 
-    let deeplink = `btcwallet://ads?withdrawalId=${this.id}`;
+    let deeplink = `btcwallet://?action=adreward&params=${encodeURIComponent(JSON.stringify({ withdrawalId: this.id }))}`;
 
     const root = document.createElement('div');
     root.classList.add('ccu-ads');
