@@ -27,6 +27,9 @@
     &-flex {
       display: flex;
     }
+    &-hidden {
+      display: none;
+    }
     &-flex-1 {
       flex: 1;
     }
@@ -180,6 +183,9 @@
     &-bg-light-blue {
       background-color: #1f9bf4;
     }
+    &-bg-blue {
+      background-color: #003359;
+    }
     &-bg-green {
       background-color: #06DE9E;
     }
@@ -191,6 +197,7 @@
     &-cursor-pointer {
       cursor: pointer;
     }
+
   }
   
 
