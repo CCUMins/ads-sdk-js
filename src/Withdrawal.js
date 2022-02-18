@@ -43,11 +43,11 @@ export default class Withdrawal {
               <img src='https://ccu-public.s3.us-east-2.amazonaws.com/ads-sdk-assets/questionMark.svg' id='question-mark-button' class='ads-style-cursor-pointer' style='width: 15px; margin-left: 8px;' />
             </div>
             <div id="ccu-ads-withdrawal-dialog-action" class='ads-style-w-full' ></div>
-            <span class='ads-style-font-xs ads-style-mt-1 ads-style-text-center' style='color: #859ea5;'><b>BTCWallet is the Bitcoin wallet by Sato,</b> a public blockchain company listed on the TSX.V</span>
+            <span class='ads-style-font-xs ads-style-mt-1 ads-style-text-center' style='color: #859ea5;'><b>SATO is the Bitcoin wallet by bysato.com,</b> a public blockchain company listed on the TSX.V</span>
           </div>
         </div>
         <div class='ads-style-w-full ads-style-p-2 ads-style-pt-0' style='max-width: 300px;'>
-          <span class='ads-style-text-sm ads-style-text-white ads-style-italic ads-style-mt-1 ads-style-text-center'>Don't have BTCWallet by SATO?</span>
+          <span class='ads-style-text-sm ads-style-text-white ads-style-italic ads-style-mt-1 ads-style-text-center'>Don't have SATO?</span>
           <div class='ads-style-w-full ads-style-flex-row' style='margin-top: 8px;'>
             <div onclick="window.open('https://apps.apple.com/us/app/btcwallet-by-sato/id1608434283')" class='ads-style-flex-1' style='padding-right: 4px;'>
               <img src='https://ccu-public.s3.us-east-2.amazonaws.com/ads-sdk-assets/appStore.svg' alt='' />
@@ -63,11 +63,11 @@ export default class Withdrawal {
 
     if( isMobile() ) {
       document.getElementById('ccu-ads-withdrawal-dialog-action').innerHTML = `
-        <button onclick='window.open("${deeplink}")' class='ads-style-bg-green ads-style-mt-1 ads-style-w-full' style='padding: 10px 16px; border-radius: 8px;'><span class='ads-style-text-sm ads-style-text-white ads-style-uppercase ads-style-spacing'>Claim in BTCWallet</span></button>
+        <button onclick='window.open("${deeplink}")' class='ads-style-bg-green ads-style-mt-1 ads-style-w-full' style='padding: 10px 16px; border-radius: 8px;'><span class='ads-style-text-sm ads-style-text-white ads-style-uppercase ads-style-spacing ads-style-font-bold'>Claim in SATO</span></button>
       `;
     } else {
       document.getElementById('ccu-ads-withdrawal-dialog-action').innerHTML = `
-        <span class='ads-style-font-sm ads-style-text-gray ads-style-italic ads-style-text-center ads-style-mt-2'>Scan this QR with BTCWallet by SATO app to claim the withdrawal.</span>
+        <span class='ads-style-font-sm ads-style-text-gray ads-style-italic ads-style-text-center ads-style-mt-2'>Scan this QR with SATO app to claim the withdrawal.</span>
         <img src='https://chart.googleapis.com/chart?cht=qr&chl=${encodeURIComponent(deeplink)}&chs=250x250&chld=L|0' />
       `;
     }
