@@ -68,7 +68,10 @@ export default class Withdrawal {
     } else {
       document.getElementById('ccu-ads-withdrawal-dialog-action').innerHTML = `
         <span class='ads-style-font-sm ads-style-text-gray ads-style-italic ads-style-text-center ads-style-mt-2'>Scan this QR with SATO app to claim the withdrawal.</span>
-        <img src='https://chart.googleapis.com/chart?cht=qr&chl=${encodeURIComponent(deeplink)}&chs=250x250&chld=L|0' />
+        <div class='ads-style-w-full'>
+          <img src='https://chart.googleapis.com/chart?cht=qr&chl=${encodeURIComponent(deeplink)}&chs=250x250&chld=L|0' />
+          <img class='absolute' src='https://ccu-public.s3.us-east-2.amazonaws.com/ads-sdk-assets/satoLogo.png' style='width: 50px' />
+        </div>
       `;
     }
 
