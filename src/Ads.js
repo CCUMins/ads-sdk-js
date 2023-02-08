@@ -60,10 +60,11 @@ export default class CCUAds {
     }
     const video = document.createElement('video');
     video.setAttribute('playsinline', '');
+    video.setAttribute('muted', '');
+    video.setAttribute('autoplay', '');
     video.style.cssText = 'object-fit: contain;';
     video.src = streamURL;
     video.loop = false;
-    video.autoplay = false;
 
     video.onloadedmetadata = async () => {
 
